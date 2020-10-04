@@ -1,0 +1,175 @@
+{
+  "game": {
+    "steps": {
+      "easy": [500, 1000, 2000, 4000],
+      "normal": [8000, 16000, 32000, 64000],
+      "hard": [125000, 250000, 500000],
+      "ultra": [1000000]
+    },
+    "questions": {
+      "easy": [
+        {
+          "question": "Which best selling toy of 1983 caused hysteria, resulting in riots breaking out in stores?",
+          "answers": {
+            "incorrect": ["Transformers", "Care Bears", "Rubik's Cube"],
+            "correct": ["Cabbage Patch Kids"]
+          }
+        },
+        {
+          "question": "What does a funambulist walk on?",
+          "answers": {
+            "incorrect": ["Broken Glass", "Balls", "The Moon"],
+            "correct": ["A Tight Rope"]
+          }
+        },
+        {
+          "question": "Blinky, Pinky, Inky and Clyde are characters from which classic video game?",
+          "answers": {
+            "incorrect": ["Gauntlet", "Space Invaders", "Street Fighter"],
+            "correct": ["Pac-Man"]
+          }
+        },
+        {
+          "question": "Which of these is the name of the largest city in the US state Tennessee?",
+          "answers": {
+            "incorrect": ["Thebes", "Alexandria", "Luxor"],
+            "correct": ["Memphis"]
+          }
+        },
+        {
+          "question": "This Marvel superhero is often called 'The man without fear'?",
+          "answers": {
+            "incorrect": ["Thor", "Wolverine", "Hulk"],
+            "correct": ["Daredevil"]
+          }
+        },
+        {
+          "question": "Which computer language would you associate Django framework with?",
+          "answers": {
+            "incorrect": ["C#", "C++", "Java"],
+            "correct": ["Python"]
+          }
+        }
+      ],
+      "normal": [
+        {
+          "question": "On a radio, stations are changed by using what control?",
+          "answers": {
+            "incorrect": ["Volume", "Bass", "Treble"],
+            "correct": ["Tunning"]
+          }
+        },
+        {
+          "question": "In what year was the original Sonic the Hedgehog game released?",
+          "answers": {
+            "incorrect": ["1989", "1993", "1995"],
+            "correct": ["1991"]
+          }
+        },
+        {
+          "question": "Which of these species is not extinct??",
+          "answers": {
+            "incorrect": ["Japanese sea lion", "Tasmanian tiger", "Saudi gazelle"],
+            "correct": ["Komodo dragon"]
+          }
+        },
+        {
+          "question": "Between 1973 to 1990, what country was ruled by dictator Augusto Pinochet?",
+          "answers": {
+            "incorrect": ["Ethiopia", "Indonesia", "Nicaragua"],
+            "correct": ["Chile"]
+          }
+        },
+        {
+          "question": "Ed Koch, the Mayor of New York in 1984, played himself in which Muppets movie?",
+          "answers": {
+            "incorrect": [
+              "The Great Muppet Caper",
+              "The Muppet Christmas Carol",
+              "The Muppet Movie"
+            ],
+            "correct": ["The Muppets Take Manhattan"]
+          }
+        }
+      ],
+      "hard": [
+        {
+          "question": "#In what year was the card game Magic: the Gathering first introduced?",
+          "answers": {
+            "incorrect": ["1987", "1998", "2003"],
+            "correct": ["1993"]
+          }
+        },
+        {
+          "question": "#Which of these people was NOT a founder of Apple Inc?",
+          "answers": {
+            "incorrect": ["Steve Jobs", "Ronald Wayne", "Steve Wozniak"],
+            "correct": ["Jonathan Ive"]
+          }
+        },
+        {
+          "question": "Which of the following films was NOT directed by Hayao Miyazaki?",
+          "answers": {
+            "incorrect": [
+              "Princess Mononoke",
+              "Spirited Away",
+              "Kikitos Delivery Service"
+            ],
+            "correct": ["Wolf Children"]
+          }
+        },
+        {
+          "question": "What was the capital of South Vietnam before the Vietnam War?",
+          "answers": {
+            "incorrect": ["Ho Chi Minh City", "Hanoi", "Hue"],
+            "correct": ["Saigon"]
+          }
+        },
+        {
+          "question": "What position does Harry Potter play in Quidditch?",
+          "answers": {
+            "incorrect": ["Beater", "Chaser", "Keeper"],
+            "correct": ["Seeker"]
+          }
+        }
+      ],
+      "ultra": [
+        {
+          "question": "Which German city is located on the River Isar?",
+          "answers": {
+            "incorrect": ["Berlin", "Hamburg", "Dortmund"],
+            "correct": ["Munich"]
+          }
+        },
+        {
+          "question": "In Greek Mythology, who killed Achilles?",
+          "answers": {
+            "incorrect": ["Hector", "Helen", "Pericles"],
+            "correct": ["Paris"]
+          }
+        },
+        {
+          "question": "Which of these television shows makes everyone look under their chair?",
+          "answers": {
+            "incorrect": ["Jimmy Fallon", "Saturday Night Live", "Larry Rubert"],
+            "correct": ["Oprah"]
+          }
+        },
+        {
+          "question": "What was the name of the first MMORPG to popularize the genre?",
+          "answers": {
+            "incorrect": ["World of Warcraft", "Meridian 59", "Guild Wars"],
+            "correct": ["Ultima Online"]
+          }
+        },
+        {
+          "question": "Who became Prime Minister of the United Kingdom in July 2016?",
+          "answers": {
+            "incorrect": ["Boris Johnson", "David Cameron", "Tony Blair"],
+            "correct": ["Theresa May"]
+          }
+        }
+      ]
+    }
+  }
+}
