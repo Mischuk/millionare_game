@@ -36,7 +36,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "start:local": "webpack-dev-server --host 192.168.0.170"
   },
   "eslintConfig": {
     "extends": [

@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import Game from "./components/Game";
 import { store } from "./store";
 import "../node_modules/ress/ress.css";
+import "./index.scss";
 
 ReactDOM.render(
   <React.StrictMode>

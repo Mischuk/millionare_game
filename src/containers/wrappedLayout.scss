@@ -4,7 +4,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 
   @include mq("sm") {
@@ -50,5 +50,6 @@
 
   &__content {
     position: relative;
+    height: 100%;
   }
 }
