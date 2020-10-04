@@ -55,7 +55,7 @@
     justify-content: center;
     width: 100%;
     margin-top: auto;
-    margin-bottom: $gap * 3;
+    margin-bottom: $gap * 6;
 
     @include mq("sm") {
       justify-content: start;

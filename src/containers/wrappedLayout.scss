@@ -34,7 +34,7 @@
   &__image-container {
     align-items: flex-end;
     justify-content: center;
-    max-height: 50vh;
+    max-height: 40vh;
     padding: $gap;
 
     @include mq("sm") {

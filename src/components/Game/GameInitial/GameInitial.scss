@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  height: 50vh;
+  height: 100%;
   padding: $gap;
 
   @include mq("sm") {
@@ -16,7 +16,8 @@
   }
 
   &__title {
-    margin-bottom: $gap / 2;
+    margin-top: $gap;
+    margin-bottom: $gap;
     font-weight: 600;
     font-size: 32px;
     text-align: center;
@@ -38,7 +39,7 @@
     justify-content: center;
     width: 100%;
     margin-top: auto;
-    margin-bottom: $gap * 3;
+    margin-bottom: $gap * 6;
 
     @include mq("sm") {
       justify-content: start;
