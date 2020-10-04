@@ -1,0 +1,367 @@
+.game-steps {
+  @import "../../../styles/shared";
+
+  $menu-size: 50px;
+  $this: &;
+
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: get-color("background");
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background: get-color("black");
+    visibility: hidden;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+    @include mq("sm") {
+      display: none;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $menu-size;
+    height: $menu-size;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+
+    @include mq("sm") {
+      display: none;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-top: $menu-size;
+    overflow: auto;
+  }
+
+  &__sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: get-color("background");
+    transform: translateX(100%);
+    transition: transform 500ms ease-in-out;
+
+    @include mq("sm") {
+      position: relative;
+      flex-basis: 25%;
+      background: get-color("white");
+      transform: translateX(0%);
+      transition: none;
+    }
+
+    &.is-open {
+      transform: translateX(0%);
+    }
+  }
+
+  &__answers {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    padding-bottom: $gap * 2;
+    -webkit-tap-highlight-color: transparent;
+
+    @include mq("lg") {
+      min-width: $container;
+      max-width: $container;
+      margin-right: auto;
+      margin-bottom: auto;
+      margin-left: auto;
+    }
+  }
+
+  &__answer {
+    @mixin highlightAnswer($this, $border, $background) {
+      $this: $this;
+
+      &:after {
+        background: $background;
+      }
+
+      #{$this}__answer-label {
+        border-color: $background;
+        background-color: $border;
+      }
+      #{$this}__answer-decor-arrow {
+        &--left {
+          &:before {
+            border-right-color: $background;
+          }
+
+          &:after {
+            border-right-color: $border;
+          }
+        }
+
+        &--right {
+          &:before {
+            border-left-color: $background;
+          }
+
+          &:after {
+            border-left-color: $border;
+          }
+        }
+      }
+    }
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 56px;
+    padding-right: 40px;
+    padding-left: 40px;
+    cursor: pointer;
+    overflow: hidden;
+
+    @include hover() {
+      &:after {
+        background: get-color("primary");
+      }
+
+      #{$this}__answer-label {
+        border-color: get-color("primary");
+      }
+      #{$this}__answer-decor-arrow {
+        &--left {
+          &:before {
+            border-right-color: get-color("primary");
+          }
+        }
+
+        &--right {
+          &:before {
+            border-left-color: get-color("primary");
+          }
+        }
+      }
+    }
+
+    @include mq("sm") {
+      flex-basis: 50%;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      margin-top: -0.5px;
+      background: get-color("border");
+    }
+
+    &:nth-child(3n),
+    &:nth-child(4n) {
+      @include mq("sm") {
+        margin-top: $gap * 2;
+      }
+    }
+
+    & + & {
+      @include mq("sm", "max") {
+        margin-top: $gap / 2;
+      }
+    }
+
+    &.is-selected {
+      @include highlightAnswer(
+        #{$this},
+        get-color("primary", "selected"),
+        get-color("primary")
+      );
+    }
+
+    &.is-success {
+      @include highlightAnswer(
+        #{$this},
+        get-color("success", "selected"),
+        get-color("success")
+      );
+    }
+
+    &.is-failure {
+      @include highlightAnswer(
+        #{$this},
+        get-color("error", "selected"),
+        get-color("error")
+      );
+    }
+  }
+
+  &__answer-label {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid get-color("border");
+    border-radius: 15px;
+    background: get-color("white");
+  }
+
+  &__answer-prefix {
+    margin-right: $gap;
+    color: get-color("primary");
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__answer-value {
+    display: flex;
+    align-items: center;
+    padding-left: $gap;
+    font-size: 14px;
+
+    @include mq("sm") {
+      font-size: 16px;
+    }
+
+    @include mq("md") {
+      font-size: 20px;
+    }
+  }
+
+  &__answer-decor-arrow {
+    position: absolute;
+    top: 50%;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 0;
+      height: 0;
+      pointer-events: none;
+    }
+
+    &:after {
+      margin-top: -21px;
+      border: solid transparent;
+      border-width: 21px;
+    }
+
+    &:before {
+      margin-top: -22px;
+      border: solid transparent;
+      border-width: 22px;
+    }
+
+    &--left {
+      left: 1px;
+
+      &:after,
+      &:before {
+        right: calc(100% - 1px);
+      }
+
+      &:after {
+        border-right-color: get-color("white");
+      }
+
+      &:before {
+        border-right-color: get-color("border");
+      }
+    }
+
+    &--right {
+      right: 1px;
+
+      &:after,
+      &:before {
+        left: calc(100% - 1px);
+      }
+
+      &:after {
+        border-left-color: get-color("white");
+      }
+
+      &:before {
+        border-left-color: get-color("border");
+      }
+    }
+  }
+
+  &__question {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 50vh;
+    padding: $gap;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+
+    @include mq("sm") {
+      align-items: start;
+      padding-right: $gap * 3.5;
+      padding-left: $gap * 3.5;
+      font-size: 32px;
+      text-align: left;
+    }
+
+    @include mq("lg") {
+      align-items: start;
+      min-width: $container;
+      max-width: $container;
+      margin-right: auto;
+      margin-bottom: $gap * 2;
+      margin-left: auto;
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  &__question-debug {
+    color: get-color("success");
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+
+    @include mq("sm") {
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  &.is-open {
+    &:after {
+      visibility: visible;
+      opacity: 0.95;
+    }
+  }
+}

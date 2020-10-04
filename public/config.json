@@ -1,0 +1,164 @@
+{
+  "game": {
+    "steps": {
+      "easy": [500, 1000, 2000, 4000]
+    },
+    "questions": {
+      "easy": [
+        {
+          "question": "Which best selling toy of 1983 caused hysteria, resulting in riots breaking out in stores?",
+          "answers": {
+            "incorrect": ["Transformers", "Care Bears", "Rubik's Cube"],
+            "correct": ["Cabbage Patch Kids"]
+          }
+        },
+        {
+          "question": "What does a funambulist walk on?",
+          "answers": {
+            "incorrect": ["Broken Glass", "Balls", "The Moon"],
+            "correct": ["A Tight Rope"]
+          }
+        },
+        {
+          "question": "Blinky, Pinky, Inky and Clyde are characters from which classic video game?",
+          "answers": {
+            "incorrect": ["Gauntlet", "Space Invaders", "Street Fighter"],
+            "correct": ["Pac-Man"]
+          }
+        },
+        {
+          "question": "Which of these is the name of the largest city in the US state Tennessee?",
+          "answers": {
+            "incorrect": ["Thebes", "Alexandria", "Luxor"],
+            "correct": ["Memphis"]
+          }
+        },
+        {
+          "question": "This Marvel superhero is often called 'The man without fear'?",
+          "answers": {
+            "incorrect": ["Thor", "Wolverine", "Hulk"],
+            "correct": ["Daredevil"]
+          }
+        },
+        {
+          "question": "Which computer language would you associate Django framework with?",
+          "answers": {
+            "incorrect": ["C#", "C++", "Java"],
+            "correct": ["Python"]
+          }
+        }
+      ],
+      "normal": [
+        {
+          "question": "#1 On a radio, stations are changed by using what control?",
+          "answers": {
+            "incorrect": ["Volume", "Bass", "Treble"],
+            "correct": ["Tunning"]
+          }
+        },
+        {
+          "question": "#2 On a radio, stations are changed by using what control?",
+          "answers": {
+            "incorrect": ["Volume", "Bass", "Treble"],
+            "correct": ["Tunning"]
+          }
+        },
+        {
+          "question": "#3 On a radio, stations are changed by using what control?",
+          "answers": {
+            "incorrect": ["Volume", "Bass", "Treble"],
+            "correct": ["Tunning"]
+          }
+        },
+        {
+          "question": "#4 On a radio, stations are changed by using what control?",
+          "answers": {
+            "incorrect": ["Volume", "Bass", "Treble"],
+            "correct": ["Tunning"]
+          }
+        },
+        {
+          "question": "#5 On a radio, stations are changed by using what control?",
+          "answers": {
+            "incorrect": ["Volume", "Bass", "Treble"],
+            "correct": ["Tunning"]
+          }
+        }
+      ],
+      "hard": [
+        {
+          "question": "#1 On a radio, stations are changed by using what control?",
+          "answers": {
+            "incorrect": ["Volume", "Bass", "Treble"],
+            "correct": ["Tunning"]
+          }
+        },
+        {
+          "question": "#2 On a radio, stations are changed by using what control?",
+          "answers": {
+            "incorrect": ["Volume", "Bass", "Treble"],
+            "correct": ["Tunning"]
+          }
+        },
+        {
+          "question": "#3 On a radio, stations are changed by using what control?",
+          "answers": {
+            "incorrect": ["Volume", "Bass", "Treble"],
+            "correct": ["Tunning"]
+          }
+        },
+        {
+          "question": "#4 On a radio, stations are changed by using what control?",
+          "answers": {
+            "incorrect": ["Volume", "Bass", "Treble"],
+            "correct": ["Tunning"]
+          }
+        },
+        {
+          "question": "#5 On a radio, stations are changed by using what control?",
+          "answers": {
+            "incorrect": ["Volume", "Bass", "Treble"],
+            "correct": ["Tunning"]
+          }
+        }
+      ],
+      "ultra": [
+        {
+          "question": "#1 On a radio, stations are changed by using what control?",
+          "answers": {
+            "incorrect": ["Volume", "Bass", "Treble"],
+            "correct": ["Tunning"]
+          }
+        },
+        {
+          "question": "#2 On a radio, stations are changed by using what control?",
+          "answers": {
+            "incorrect": ["Volume", "Bass", "Treble"],
+            "correct": ["Tunning"]
+          }
+        },
+        {
+          "question": "#3 On a radio, stations are changed by using what control?",
+          "answers": {
+            "incorrect": ["Volume", "Bass", "Treble"],
+            "correct": ["Tunning"]
+          }
+        },
+        {
+          "question": "#4 On a radio, stations are changed by using what control?",
+          "answers": {
+            "incorrect": ["Volume", "Bass", "Treble"],
+            "correct": ["Tunning"]
+          }
+        },
+        {
+          "question": "#5 On a radio, stations are changed by using what control?",
+          "answers": {
+            "incorrect": ["Volume", "Bass", "Treble"],
+            "correct": ["Tunning"]
+          }
+        }
+      ]
+    }
+  }
+}

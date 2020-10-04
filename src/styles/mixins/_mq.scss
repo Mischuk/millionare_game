@@ -8,7 +8,7 @@ $breakpoints: (
   "xxl": 1600px,
 );
 
-@mixin mq($width, $type: max) {
+@mixin mq($width, $type: min) {
   @if map-has-key($breakpoints, $width) {
     $width: map-get($breakpoints, $width);
 

@@ -1,0 +1,30 @@
+.button {
+  @import "../../styles/shared";
+
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: 48px;
+  min-height: 48px;
+  border-radius: 5px;
+  color: get-color("primary", "invert");
+  font-weight: 600;
+  font-size: 14px;
+  background: get-color("primary");
+  outline: none;
+  transition: background-color 300ms ease-out;
+
+  @include mq("md") {
+    height: 64px;
+    min-height: 64px;
+    font-size: 20px;
+  }
+
+  &:hover {
+    background-color: get-color("primary", "hover");
+  }
+
+  &:active {
+    background-color: get-color("primary", "active");
+  }
+}
